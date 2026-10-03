@@ -9,8 +9,8 @@ An access-control system for a door: tap an RFID card, the lock decides, and eve
 ```
  RFID card ──► RC522 reader ──► ESP32 / ESP8266 ──► Django API ──► React admin dashboard
                                    │                    │
-                              lock + LED/buzzer     users, cards, access logs
-                                feedback
+                             lock + feedback        users, cards, access logs
+
 ```
 
 - **Hardware** — an RC522 reader on an ESP32/ESP8266 reads the card UID, drives the lock and gives instant feedback (granted / denied).
